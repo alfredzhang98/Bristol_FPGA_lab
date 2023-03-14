@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sim_1/new/mult16_tb.sv,1678808905,systemVerilog,,,,mult16_tb,,,,,,,,
+C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sim_1/new/mult8_tb.sv,1678802914,systemVerilog,,,,mult8_tb,,,,,,,,
+C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sources_1/new/mult16.sv,1678808743,systemVerilog,,C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sources_1/new/mult8.sv,,mult16,,,,,,,,
+C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sources_1/new/mult8.sv,1678801065,systemVerilog,,C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sim_1/new/mult16_tb.sv,,mult8,,,,,,,,

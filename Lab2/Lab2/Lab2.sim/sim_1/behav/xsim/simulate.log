@@ -1,0 +1,6 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+x1 = 00100100, x2 =00001101, out = xxxxxxxxxxxxxxxx
+Error: Test failed!
+Time: 0 ps  Iteration: 0  Process: /mult8_tb/Initial33_1  File: C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sim_1/new/mult8_tb.sv
+$finish called at time : 1 us : File "C:/Users/vn22984/FPGA/Lab2/Lab2/Lab2.srcs/sim_1/new/mult8_tb.sv" Line 42
