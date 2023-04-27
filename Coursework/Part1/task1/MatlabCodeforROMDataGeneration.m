@@ -15,7 +15,7 @@ Fs = SAMPLES * freq;
 % passband cut-off frequency
 Fc = freq;
 % windows length
-L = 5; 
+L = 7; 
 % windows order
 M = L-1;
 %omega
@@ -41,8 +41,9 @@ n = -M/2:1:M/2;
 zero_normal = find(n==0); 
 n(zero_normal) = 0.0000001;
 W_hamming = a - (1-a) * cos(2*pi*n./(L-1)); % Hanming
+W_rect = 1;
 H_result = omiga ./ pi * my_sinc(omiga * n);
-b = W_hamming .* H_result;
+b = W_rect .* H_result;
 % b = H_result;
 % % Normalised filter coefficients
 b = b/sum(b);
@@ -67,6 +68,9 @@ subplot(1,2,1)
 zplane(b);
 xlim([-1.2 1.2])
 ylim([-1.2 1.2])
+title('zplane');
+xlabel('Real part')
+ylabel('Imaginary part')
 grid on
 
 % Filtered signal
