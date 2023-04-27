@@ -1,3 +1,8 @@
+% Group 04
+% Qingyu Zhang <vn22984@bristol.ac.uk>
+% Shuran Yang  <rw22242@bristol.ac.uk>
+% Ruilong Liu  <hx22195@bristol.ac.uk>
+
 clc,
 clear,
 close all
@@ -8,7 +13,6 @@ SAMPLES = 512;		% Samples per full-cycle
 WIDTH = 9;			% Size of data in bits
 OUTMAX = 2^WIDTH - 1;	% max Amplitude of sinewave
 
-% vn22984@bristol.ac.uk
 % FIR filter parameters
 % sample rate
 Fs = SAMPLES * freq; 
