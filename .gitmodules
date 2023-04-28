@@ -1,0 +1,3 @@
+[submodule "VERILOG-Lab"]
+	path = VERILOG-Lab
+	url = https://github.com/GPadley/VERILOG-Lab.git
