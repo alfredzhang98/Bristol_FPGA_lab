@@ -1,0 +1,19 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: D:/Software/Vivado/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TestbenchTop_behav xil_defaultlib.TestbenchTop xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/AlfredZhang/Desktop/project/Bristol_FPGA_lab/VERILOG-Lab/My Lib/spi2dac.v" Line 9. Module spi2dac doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/AlfredZhang/Desktop/project/Bristol_FPGA_lab/VERILOG-Lab/My Lib/spi2dac.v" Line 9. Module spi2dac doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClkDivider
+Compiling module xil_defaultlib.DigSineGenerator
+Compiling module xil_defaultlib.spi2dac
+Compiling module xil_defaultlib.TopPart2
+Compiling module xil_defaultlib.TestbenchTop
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TestbenchTop_behav
