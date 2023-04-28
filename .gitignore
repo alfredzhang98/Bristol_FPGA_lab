@@ -8,15 +8,13 @@
 ehthumbs.db
 Thumbs.db
 
-Coursework/Part1/part1_task2_4/*
-Coursework/Part1/part1_task2_4/**
+Coursework/Part1/part1_task2_4/
 !Coursework/Part1/part1_task2_4/part1_task2_4.xpr
 !Coursework/Part1/part1_task2_4/part1_wave.wcfg
 !Coursework/Part1/part1_task2_4/part1_task2_4.srcs/*
 !Coursework/Part1/part1_task2_4/part1_task2_4.srcs/**
 
-Coursework/Part1/part2_task1_3/*
-Coursework/Part1/part2_task1_3/**
+Coursework/Part1/part2_task1_3/
 !Coursework/Part1/part2_task1_3/part2_task1_3.xpr
 !Coursework/Part1/part2_task1_3/part2_wave.wcfg
 !Coursework/Part1/part2_task1_3/part2_task1_3.srcs/*
