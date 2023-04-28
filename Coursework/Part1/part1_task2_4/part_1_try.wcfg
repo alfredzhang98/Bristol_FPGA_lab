@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4.636600 us"></ZoomStartTime>
-      <ZoomEndTime time="23.084681 us"></ZoomEndTime>
+      <ZoomStartTime time="2.315112 us"></ZoomStartTime>
+      <ZoomEndTime time="23.548978 us"></ZoomEndTime>
       <Cursor1Time time="20.010000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="404"></NameColumnWidth>
-      <ValueColumnWidth column_width="172"></ValueColumnWidth>
+      <ValueColumnWidth column_width="166"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="5" />
    <wvobject fp_name="/Testbench/clock" type="logic">
       <obj_property name="ElementShortName">clock</obj_property>
       <obj_property name="ObjectShortName">clock</obj_property>
@@ -43,61 +43,5 @@
       <obj_property name="ObjectShortName">y[9:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/y" type="array">
-      <obj_property name="ElementShortName">y[9:0]</obj_property>
-      <obj_property name="ObjectShortName">y[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/z_1" type="array">
-      <obj_property name="ElementShortName">z_1[9:0]</obj_property>
-      <obj_property name="ObjectShortName">z_1[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/z_2" type="array">
-      <obj_property name="ElementShortName">z_2[9:0]</obj_property>
-      <obj_property name="ObjectShortName">z_2[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/z_3" type="array">
-      <obj_property name="ElementShortName">z_3[9:0]</obj_property>
-      <obj_property name="ObjectShortName">z_3[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/z_4" type="array">
-      <obj_property name="ElementShortName">z_4[9:0]</obj_property>
-      <obj_property name="ObjectShortName">z_4[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/z_5" type="array">
-      <obj_property name="ElementShortName">z_5[9:0]</obj_property>
-      <obj_property name="ObjectShortName">z_5[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/z_6" type="array">
-      <obj_property name="ElementShortName">z_6[9:0]</obj_property>
-      <obj_property name="ObjectShortName">z_6[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_0" type="array">
-      <obj_property name="ElementShortName">mul_0[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_0[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_1" type="array">
-      <obj_property name="ElementShortName">mul_1[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_1[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_2" type="array">
-      <obj_property name="ElementShortName">mul_2[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_2[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_3" type="array">
-      <obj_property name="ElementShortName">mul_3[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_3[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_4" type="array">
-      <obj_property name="ElementShortName">mul_4[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_4[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_5" type="array">
-      <obj_property name="ElementShortName">mul_5[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_5[9:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/mul_6" type="array">
-      <obj_property name="ElementShortName">mul_6[9:0]</obj_property>
-      <obj_property name="ObjectShortName">mul_6[9:0]</obj_property>
    </wvobject>
 </wave_config>
