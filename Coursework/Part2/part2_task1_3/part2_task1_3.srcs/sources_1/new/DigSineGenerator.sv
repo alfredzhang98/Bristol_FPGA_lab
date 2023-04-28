@@ -20,7 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module DigSineGenerator(
+module DigSineGenerator(clk, reset, y);
 
-    );
+input clk, reset;
+output logic[9:0] y;
+
+
+
+
 endmodule

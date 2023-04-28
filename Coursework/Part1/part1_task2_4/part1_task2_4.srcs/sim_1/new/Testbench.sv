@@ -29,19 +29,25 @@ module Testbench ();
     logic [9:0] dataOut;
     logic [9:0] out;
     logic [0:8] address;
+    
+    AddressGenerator u_AddressGenerator(
+        .clock(clock),
+        .reset(reset),
+        .address(address)
+    );
 
     dataROM u_dataROM(
         .clock(clock),
         .address(address),
         .dataOut(dataOut)
-        );
+    );
 
     FIRFilter u_FIRFilter(
         .clock(clock),
         .reset(reset),
         .x(dataOut),
         .y(out)
-        );
+    );
 
     initial begin
         clock = 0;
@@ -53,15 +59,6 @@ module Testbench ();
     end
 
     always #10 clock = ~ clock ;
-    always@(posedge clock or posedge reset)
-    if(reset)
-        address <= 9'b0;
-    else if(address == 9'd511) begin
-        address <= 9'd0;
-    end
-    else begin
-        address <= address + 1'b1;
-    end
 
 endmodule
 
