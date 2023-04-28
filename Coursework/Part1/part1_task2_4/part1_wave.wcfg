@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="2.315112 us"></ZoomStartTime>
-      <ZoomEndTime time="23.548978 us"></ZoomEndTime>
+      <ZoomStartTime time="0.010000 us"></ZoomStartTime>
+      <ZoomEndTime time="56.610001 us"></ZoomEndTime>
       <Cursor1Time time="20.010000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="404"></NameColumnWidth>
-      <ValueColumnWidth column_width="166"></ValueColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="5" />
    <wvobject fp_name="/Testbench/clock" type="logic">
@@ -28,20 +28,20 @@
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/Testbench/address" type="array">
-      <obj_property name="ElementShortName">address[0:8]</obj_property>
-      <obj_property name="ObjectShortName">address[0:8]</obj_property>
-   </wvobject>
    <wvobject fp_name="/Testbench/dataOut" type="array">
       <obj_property name="ElementShortName">dataOut[9:0]</obj_property>
       <obj_property name="ObjectShortName">dataOut[9:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
    </wvobject>
-   <wvobject fp_name="/Testbench/u_FIRFilter/y" type="array">
-      <obj_property name="ElementShortName">y[9:0]</obj_property>
-      <obj_property name="ObjectShortName">y[9:0]</obj_property>
+   <wvobject fp_name="/Testbench/out" type="array">
+      <obj_property name="ElementShortName">out[9:0]</obj_property>
+      <obj_property name="ObjectShortName">out[9:0]</obj_property>
       <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
       <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Testbench/address" type="array">
+      <obj_property name="ElementShortName">address[0:8]</obj_property>
+      <obj_property name="ObjectShortName">address[0:8]</obj_property>
    </wvobject>
 </wave_config>
