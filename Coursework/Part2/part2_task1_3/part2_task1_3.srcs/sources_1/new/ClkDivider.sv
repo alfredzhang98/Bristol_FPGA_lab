@@ -24,7 +24,6 @@ module ClkDivider
 
 #(
     parameter DIV_FACTOR_10Khz = 10000 // 10KHZ
-//    parameter DIV_FACTOR_50Mhz = 2      // 50MHz
 )
 (
     input clk,         
@@ -33,13 +32,11 @@ module ClkDivider
     output logic out_50Mhz          
 );
 
-logic [31:0] count_10Khz = 0;       // 10Khz counter
-logic [31:0] count_50Mhz = 0;       // 50MHz counter
+logic [15:0] count_10Khz = 0;       // 10Khz counter
 
 always @(posedge clk or posedge reset) begin
     if(reset) begin
         count_10Khz <= 1'b0;
-        count_50Mhz <= 1'b0;
         out_50Mhz <= 1'b0; 
         out_10Khz <= 1'b0;
     end

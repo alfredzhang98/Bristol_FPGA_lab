@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="C:/Users/AlfredZhang/Desktop/project/Bristol_FPGA_lab/Coursework/Part2/part2_task1_3/part2_task1_3.xpr">
+<Project Version="7" Minor="61" Path="C:/Users/AlfredZhang/Desktop/Bristol_FPGA_lab/Coursework/Part2/part2_task1_3/part2_task1_3.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="26d24dbc66404307aeb644b62962ca6f"/>
@@ -43,7 +43,7 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="BoardPart" Val="avnet.com:zedboard:part0:1.4"/>
-    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../../../AppData/Roaming/Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store"/>
+    <Option Name="BoardPartRepoPaths" Val="$PPRDIR/../../../../../AppData/Roaming/Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -113,6 +113,38 @@
       </File>
       <File Path="$PSRCDIR/sources_1/new/TopPart2.sv">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DigSineGeneratorUpdate.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ButtonChangeClk.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/SwitchInterface.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/BottonChangeMagnitude.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
