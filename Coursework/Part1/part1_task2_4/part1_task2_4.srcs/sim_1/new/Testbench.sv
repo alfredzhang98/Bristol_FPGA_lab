@@ -32,16 +32,24 @@ module Testbench ();
     .reset(reset), 
     .out(out)
     );
+    
 
     initial begin
         clock = 0;
         reset = 1;
         #10;
         reset = 0;
-        #20000;
+        #10000;
         $finish;
     end
+    
+    integer fd ;
+    initial fd = $fopen ("./../../../../out.txt", "w");
 
+    always @ ( posedge clock ) begin
+        $fwrite (fd, "%d \n ", out);
+    end
+    
     always #10 clock = ~ clock ;
 
 endmodule

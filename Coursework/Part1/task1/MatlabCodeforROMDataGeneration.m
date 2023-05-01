@@ -38,6 +38,20 @@ for i = 0:SAMPLES-1
 end
 fclose(fid);
 
+% read files
+fid = fopen('./../part1_task2_4/out.txt','r');
+data = textscan(fid,'%s'); 
+fclose(fid);
+
+num_array = [];
+for i = 1:length(data{1})
+    line_str = data{1}{i};
+    line_str = strrep(line_str, 'x', ''); 
+    num = str2double(line_str);
+    num_array = [num_array, num];
+end
+% disp(num_array);
+
 %FIR algorithm
 input_signal = x;
 a = 0.54;
@@ -84,9 +98,10 @@ figure;
 plot(input_signal(L:SAMPLES), 'b-');
 hold on;
 plot(output_signal(L:SAMPLES), 'r-');
+hold on;
+plot(num_array(L:length(num_array)), 'g-');
 xlabel('Time (s)');
 ylabel('Amplitude');
 title('Moving Average Filter in MATLAB');
-legend('Input Waveform', 'Output Waveform');
-
+legend('Input Waveform', 'Output Waveform', 'FPGA Output Waveform');
 
