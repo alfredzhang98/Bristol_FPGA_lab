@@ -37,7 +37,6 @@ logic signed [10:0] y_result, mul_1, mul_2;
 always @(posedge clk or posedge reset) begin
     if(reset) begin
         y_temp_1 <= 11'b00001000101;
-//        y_temp_1 <= 11'b00010000000;
         y_temp_2 <= 11'b0;
     end
     else begin
@@ -49,7 +48,6 @@ end
 //assign mul_1 = ((y_temp_2 >> 1) + (y_temp_2 >> 2) + (y_temp_2 >> 3) + (y_temp_2 >> 4) + (y_temp_2 >> 6) + (y_temp_2 >> 7)) << 1; 
 assign mul_1 = {{{1{y_temp_2[10]}}, y_temp_2[10:1]} + {{2{y_temp_2[10]}}, y_temp_2[10:2]} + {{3{y_temp_2[10]}}, y_temp_2[10:3]} + {{4{y_temp_2[10]}}, y_temp_2[10:4]} + {{6{y_temp_2[10]}}, y_temp_2[10:6]} + {{7{y_temp_2[10]}}, y_temp_2[10:7]}}<<1;
 assign mul_2 = y_temp_1;
-
 assign y_result = mul_1 - mul_2;
 assign y = y_result + 10'd512;
 

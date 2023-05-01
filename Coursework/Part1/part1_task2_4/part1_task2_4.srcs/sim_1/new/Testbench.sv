@@ -25,28 +25,12 @@ module Testbench ();
 
     logic clock;
     logic reset;
-    
-    logic [9:0] dataOut;
     logic [9:0] out;
-    logic [0:8] address;
     
-    AddressGenerator u_AddressGenerator(
-        .clock(clock),
-        .reset(reset),
-        .address(address)
-    );
-
-    dataROM u_dataROM(
-        .clock(clock),
-        .address(address),
-        .dataOut(dataOut)
-    );
-
-    FIRFilter u_FIRFilter(
-        .clock(clock),
-        .reset(reset),
-        .x(dataOut),
-        .y(out)
+    TopPart1 u_TopPart1(
+    .clock(clock), 
+    .reset(reset), 
+    .out(out)
     );
 
     initial begin

@@ -20,38 +20,31 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module ButtonChangeClk(clk, shake, sw34_value, switch_clk);
+module ButtonChangeClk(clk, flag, sw34_value, switch_clk);
 
-
-parameter DIV_FACTOR_10Khz = 10000; // 10KHZ
-//0010 0111 0001 0000
-
+//parameter DIV_FACTOR_10Khz = 10000; // 10KHZ
 input clk;
-input sw34_value;
-input shake;
+input logic [3:0] flag;
+input logic signed [8:0] sw34_value;
 output logic switch_clk;
 
-logic [3:0] shake_value;
-logic signed [8:0] clk_value;
-logic [15:0] count_clk_value;
+logic [15:0] value_temp;
 logic [15:0] count_clk;
 
 always @(posedge clk) begin
-    if(shake_value[0] == 1'b1 || shake_value[1] == 1'b1) begin
-        count_clk       <= 1'b0;
-        clk_value       <= sw34_value;
-        count_clk_value <= 15'b0010011100010000;
-        count_clk_value <= count_clk_value + sw34_value * 20;
+    if(flag[2] != 1'b0 || flag[3] != 1'b0) begin
+        value_temp <= 15'd10000;
+        value_temp <= value_temp + sw34_value * 20;
+        count_clk  <= 16'b0;
     end
     else begin
-        if (count_clk == count_clk_value - 1) begin
+        if (count_clk == value_temp - 1) begin
             switch_clk <= ~switch_clk;           
-            count_clk <= 0;        
+            count_clk  <= 0;        
         end
         else begin
             count_clk <= count_clk + 1;          
         end
-           
     end
 end
 

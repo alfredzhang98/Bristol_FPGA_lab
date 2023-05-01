@@ -22,7 +22,7 @@ a2 = r * r;
 
 %initialize ysin
 yout = [A * sin(omiga), 0];
-for i =3:1:2* SAMPLES
+for i =3:1:10* SAMPLES
     y_temp = 2 * a1 * yout(1,i-1) - a2 * yout(1,i-2);
     yout = [yout(1,:), y_temp];
 end

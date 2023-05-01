@@ -50,14 +50,14 @@ always @(posedge clock or posedge reset) begin
 end
 
 //coef mult
-////0 00100110 coef 0.149
-assign mul_0 = (x      >> 3) + (x      >> 6) + (x      >> 7);
-assign mul_1 = (z_1    >> 3) + (z_1    >> 6) + (z_1    >> 7);
-assign mul_2 = (z_2    >> 3) + (z_2    >> 6) + (z_2    >> 7);
-assign mul_3 = (z_3    >> 3) + (z_3    >> 6) + (z_3    >> 7);
-assign mul_4 = (z_4    >> 3) + (z_4    >> 6) + (z_4    >> 7);
-assign mul_5 = (z_5    >> 3) + (z_5    >> 6) + (z_5    >> 7);
-assign mul_6 = (z_6    >> 3) + (z_6    >> 6) + (z_6    >> 7);
+////0 00100100 coef 0.1429
+assign mul_0 = (x      >> 3) + (x      >> 6);
+assign mul_1 = (z_1    >> 3) + (z_1    >> 6);
+assign mul_2 = (z_2    >> 3) + (z_2    >> 6);
+assign mul_3 = (z_3    >> 3) + (z_3    >> 6);
+assign mul_4 = (z_4    >> 3) + (z_4    >> 6);
+assign mul_5 = (z_5    >> 3) + (z_5    >> 6);
+assign mul_6 = (z_6    >> 3) + (z_6    >> 6);
 
 //outcome
 assign y = mul_0 + mul_1 + mul_2 + mul_3 + mul_4 + mul_5 + mul_6;

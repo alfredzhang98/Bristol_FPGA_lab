@@ -28,7 +28,6 @@ module TestbenchTop();
     logic dac_cs;
     logic dac_sck;
     logic dac_ld;
-    
 
 TopPart2 u_TopPart2(
     .clk(clk), 

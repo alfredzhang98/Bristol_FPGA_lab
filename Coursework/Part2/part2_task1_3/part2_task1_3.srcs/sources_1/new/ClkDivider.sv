@@ -36,7 +36,7 @@ logic [15:0] count_10Khz = 0;       // 10Khz counter
 
 always @(posedge clk or posedge reset) begin
     if(reset) begin
-        count_10Khz <= 1'b0;
+        count_10Khz <= 16'b0;
         out_50Mhz <= 1'b0; 
         out_10Khz <= 1'b0;
     end

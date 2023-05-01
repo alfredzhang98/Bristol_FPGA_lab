@@ -23,8 +23,8 @@
 module DigSineGeneratorUpdate(clk, reset, magnitude, y);
 
 input clk, reset;
-input [11:0] magnitude;
-output logic[9:0] y;
+input logic [15:0] magnitude;
+output logic [9:0] y;
 
 
 logic signed [10:0] y_temp_1, y_temp_2;
@@ -35,8 +35,8 @@ always @(posedge clk or posedge reset) begin
         y_temp_1 <= 11'b00001000101;
         y_temp_2 <= 11'b0;
     end
-    else if(magnitude[11] == 1'b0) begin
-        y_temp_1 <= magnitude[10:0];
+    else if(magnitude[15:0] != 11'b00001000101) begin
+        y_temp_1 <= magnitude[15:0] ;
         y_temp_2 <= 11'b0;
     end
     else begin
