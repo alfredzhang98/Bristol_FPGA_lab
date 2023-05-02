@@ -41,12 +41,19 @@ module TopPart2(
     );
         
     
-    DigSineGenerator u_DigSineGenerator(
-        .clk(out_10Khz),
-        .reset(reset),
-        .y(y)
+//    DigSineGenerator u_DigSineGenerator(
+//        .clk(out_10Khz),
+//        .reset(reset),
+//        .y(y)
+//    );
+
+    DigSineGeneratorUpdate u_DigSineGeneratorUpdate(
+    .clk(clk), 
+    .reset(reset), 
+    .handshake_mag(1'b0), 
+    .magnitude(16'b0), 
+    .y(y)
     );
-    
         
     spi2dac u_spi2dac(
         .sysclk(out_50Mhz),

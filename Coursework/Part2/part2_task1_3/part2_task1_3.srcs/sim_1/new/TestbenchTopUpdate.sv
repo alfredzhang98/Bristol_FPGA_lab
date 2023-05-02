@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Testbench();
+module TestbenchTopUpdate();
 
     logic clk;
     logic reset;
@@ -56,11 +56,13 @@ module Testbench();
         reset = 1'b1;
         #20;
         reset = 1'b0;
-//        #10000;
+//        #200000;
 //        $finish;
     end
     
-//    always #1000 sw3_clk_up = ~ sw3_clk_up ;
+    always #100000 sw4_clk_down = ~ sw4_clk_down;
     always #5 clk = ~ clk ;
 
 endmodule
+
+

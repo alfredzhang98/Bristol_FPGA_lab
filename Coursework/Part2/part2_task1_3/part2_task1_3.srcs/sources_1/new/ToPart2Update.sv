@@ -38,7 +38,7 @@ module ToPart2Update(
     logic [7:0] value_34;
     logic valid_mag;
     logic valid_clk;
-    logic [15:0] switch_magnitude;
+    logic [10:0] switch_magnitude;
     logic switch_clk;
     logic out_10Khz;    
     logic out_50Mhz;
@@ -54,7 +54,7 @@ module ToPart2Update(
     .flag_out(flag_out)
     );
     
-    KeyFlagSettingVlaue u_KeyFlagSettingVlaue(
+    FlagSettingValue u_FlagSettingValue(
       .clk(clk),
       .reset(reset),
       .flag(flag_out),
@@ -64,7 +64,7 @@ module ToPart2Update(
       .valid_clk(valid_clk)
     );
     
-    BottonChangeMagnitude u_BottonChangeMagnitude(
+    ButtonChangeMagnitude u_ButtonChangeMagnitude(
     .clk(clk), 
     .reset(reset), 
     .valid_mag(valid_mag), 

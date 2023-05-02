@@ -38,8 +38,8 @@ output logic [3:0] flag_out;
 
 //avoid shake for 20ms
 //10ns * 1000000 = 10 ms
-parameter AVOID_SHAKE = 32'd2;
-//parameter AVOID_SHAKE = 32'd1_000_000;
+//parameter AVOID_SHAKE = 32'd10;
+parameter AVOID_SHAKE = 32'd1_000;
 
 logic [31:0] count_switch1 = 0;  
 logic [31:0] count_switch2 = 0;  

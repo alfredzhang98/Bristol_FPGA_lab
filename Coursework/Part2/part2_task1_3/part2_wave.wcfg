@@ -3,258 +3,300 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="Testbench_behav.wdb" id="1">
+      <db_ref path="TestbenchTopUpdate_behav.wdb" id="1">
          <top_modules>
-            <top_module name="Testbench" />
+            <top_module name="TestbenchTopUpdate" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="7.740001 us"></ZoomEndTime>
-      <Cursor1Time time="0.720000 us"></Cursor1Time>
+      <ZoomStartTime time="34,918.780000 us"></ZoomStartTime>
+      <ZoomEndTime time="35,083.480001 us"></ZoomEndTime>
+      <Cursor1Time time="34,994.780000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="392"></NameColumnWidth>
+      <NameColumnWidth column_width="368"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="5" />
-   <wvobject fp_name="group20" type="group">
-      <obj_property name="label">SwitchInterface</obj_property>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker time="34972280000" label="" />
+   </wave_markers>
+   <wvobject fp_name="group72" type="group">
+      <obj_property name="label">Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/reset" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/reset" type="logic">
          <obj_property name="ElementShortName">reset</obj_property>
          <obj_property name="ObjectShortName">reset</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/sw1_mag_up" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/sw1_mag_up" type="logic">
          <obj_property name="ElementShortName">sw1_mag_up</obj_property>
          <obj_property name="ObjectShortName">sw1_mag_up</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/sw2_mag_down" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/sw2_mag_down" type="logic">
          <obj_property name="ElementShortName">sw2_mag_down</obj_property>
          <obj_property name="ObjectShortName">sw2_mag_down</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/sw3_clk_up" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/sw3_clk_up" type="logic">
          <obj_property name="ElementShortName">sw3_clk_up</obj_property>
          <obj_property name="ObjectShortName">sw3_clk_up</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/sw4_clk_down" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/sw4_clk_down" type="logic">
          <obj_property name="ElementShortName">sw4_clk_down</obj_property>
          <obj_property name="ObjectShortName">sw4_clk_down</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/flag_out" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/flag_out" type="array">
          <obj_property name="ElementShortName">flag_out[3:0]</obj_property>
          <obj_property name="ObjectShortName">flag_out[3:0]</obj_property>
          <obj_property name="isExpanded"></obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/count_switch1" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/count_switch1" type="array">
          <obj_property name="ElementShortName">count_switch1[31:0]</obj_property>
          <obj_property name="ObjectShortName">count_switch1[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/count_switch2" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/count_switch2" type="array">
          <obj_property name="ElementShortName">count_switch2[31:0]</obj_property>
          <obj_property name="ObjectShortName">count_switch2[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/count_switch3" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/count_switch3" type="array">
          <obj_property name="ElementShortName">count_switch3[31:0]</obj_property>
          <obj_property name="ObjectShortName">count_switch3[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/count_switch4" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/count_switch4" type="array">
          <obj_property name="ElementShortName">count_switch4[31:0]</obj_property>
          <obj_property name="ObjectShortName">count_switch4[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/flag" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/flag" type="array">
          <obj_property name="ElementShortName">flag[3:0]</obj_property>
          <obj_property name="ObjectShortName">flag[3:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_SwitchInterface/AVOID_SHAKE" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_SwitchInterface/AVOID_SHAKE" type="array">
          <obj_property name="ElementShortName">AVOID_SHAKE[31:0]</obj_property>
          <obj_property name="ObjectShortName">AVOID_SHAKE[31:0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group34" type="group">
-      <obj_property name="label">KeyFlag</obj_property>
+   <wvobject fp_name="group84" type="group">
+      <obj_property name="label">Flag</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/reset" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/reset" type="logic">
          <obj_property name="ElementShortName">reset</obj_property>
          <obj_property name="ObjectShortName">reset</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/flag" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/flag" type="array">
          <obj_property name="ElementShortName">flag[3:0]</obj_property>
          <obj_property name="ObjectShortName">flag[3:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/value_12" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/value_12" type="array">
          <obj_property name="ElementShortName">value_12[7:0]</obj_property>
          <obj_property name="ObjectShortName">value_12[7:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/value_34" type="array">
-         <obj_property name="ElementShortName">value_34[7:0]</obj_property>
-         <obj_property name="ObjectShortName">value_34[7:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/valid_mag" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/value_34" type="array">
+         <obj_property name="ElementShortName">value_34[7:0]</obj_property>
+         <obj_property name="ObjectShortName">value_34[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/valid_mag" type="logic">
          <obj_property name="ElementShortName">valid_mag</obj_property>
          <obj_property name="ObjectShortName">valid_mag</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/valid_clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/valid_clk" type="logic">
          <obj_property name="ElementShortName">valid_clk</obj_property>
          <obj_property name="ObjectShortName">valid_clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/value_temp1" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/value_temp1" type="array">
          <obj_property name="ElementShortName">value_temp1[7:0]</obj_property>
          <obj_property name="ObjectShortName">value_temp1[7:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/value_temp2" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/value_temp2" type="array">
          <obj_property name="ElementShortName">value_temp2[7:0]</obj_property>
          <obj_property name="ObjectShortName">value_temp2[7:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/VALUE_MAX_CLK" type="array">
-         <obj_property name="ElementShortName">VALUE_MAX_CLK[31:0]</obj_property>
-         <obj_property name="ObjectShortName">VALUE_MAX_CLK[31:0]</obj_property>
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/VALUE_MAX1" type="array">
+         <obj_property name="ElementShortName">VALUE_MAX1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">VALUE_MAX1[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/VALUE_MAX_MAG" type="array">
-         <obj_property name="ElementShortName">VALUE_MAX_MAG[31:0]</obj_property>
-         <obj_property name="ObjectShortName">VALUE_MAX_MAG[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/VALUE_INIT_CLK" type="array">
-         <obj_property name="ElementShortName">VALUE_INIT_CLK[31:0]</obj_property>
-         <obj_property name="ObjectShortName">VALUE_INIT_CLK[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_KeyFlagSettingVlaue/VALUE_INIT_MAG" type="array">
-         <obj_property name="ElementShortName">VALUE_INIT_MAG[31:0]</obj_property>
-         <obj_property name="ObjectShortName">VALUE_INIT_MAG[31:0]</obj_property>
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_FlagSettingValue/VALUE_MAX2" type="array">
+         <obj_property name="ElementShortName">VALUE_MAX2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">VALUE_MAX2[31:0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group176" type="group">
-      <obj_property name="label">MAG_change</obj_property>
+   <wvobject fp_name="group93" type="group">
+      <obj_property name="label">Mag_change</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeMagnitude/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/reset" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeMagnitude/reset" type="logic">
          <obj_property name="ElementShortName">reset</obj_property>
          <obj_property name="ObjectShortName">reset</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/valid_mag" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeMagnitude/valid_mag" type="logic">
          <obj_property name="ElementShortName">valid_mag</obj_property>
          <obj_property name="ObjectShortName">valid_mag</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/sw12_value" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeMagnitude/sw12_value" type="array">
          <obj_property name="ElementShortName">sw12_value[7:0]</obj_property>
          <obj_property name="ObjectShortName">sw12_value[7:0]</obj_property>
-         <obj_property name="Radix">OCTALRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/switch_magnitude" type="array">
-         <obj_property name="ElementShortName">switch_magnitude[15:0]</obj_property>
-         <obj_property name="ObjectShortName">switch_magnitude[15:0]</obj_property>
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeMagnitude/switch_magnitude" type="array">
+         <obj_property name="ElementShortName">switch_magnitude[10:0]</obj_property>
+         <obj_property name="ObjectShortName">switch_magnitude[10:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/handshake_mag" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeMagnitude/handshake_mag" type="logic">
          <obj_property name="ElementShortName">handshake_mag</obj_property>
          <obj_property name="ObjectShortName">handshake_mag</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_BottonChangeMagnitude/value_temp" type="array">
-         <obj_property name="ElementShortName">value_temp[15:0]</obj_property>
-         <obj_property name="ObjectShortName">value_temp[15:0]</obj_property>
-      </wvobject>
    </wvobject>
-   <wvobject fp_name="group1296" type="group">
-      <obj_property name="label">CLK_change</obj_property>
+   <wvobject fp_name="group101" type="group">
+      <obj_property name="label">Clk_change</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/reset" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/reset" type="logic">
          <obj_property name="ElementShortName">reset</obj_property>
          <obj_property name="ObjectShortName">reset</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/valid_clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/valid_clk" type="logic">
          <obj_property name="ElementShortName">valid_clk</obj_property>
          <obj_property name="ObjectShortName">valid_clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/sw34_value" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/sw34_value" type="array">
          <obj_property name="ElementShortName">sw34_value[7:0]</obj_property>
          <obj_property name="ObjectShortName">sw34_value[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/switch_clk" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/switch_clk" type="logic">
          <obj_property name="ElementShortName">switch_clk</obj_property>
          <obj_property name="ObjectShortName">switch_clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/value_temp" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/value_temp" type="array">
          <obj_property name="ElementShortName">value_temp[15:0]</obj_property>
          <obj_property name="ObjectShortName">value_temp[15:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_ButtonChangeClk/count_clk" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_ButtonChangeClk/count_clk" type="array">
          <obj_property name="ElementShortName">count_clk[15:0]</obj_property>
          <obj_property name="ObjectShortName">count_clk[15:0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group753" type="group">
+   <wvobject fp_name="group114" type="group">
       <obj_property name="label">Gen</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/clk" type="logic">
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/reset" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/reset" type="logic">
          <obj_property name="ElementShortName">reset</obj_property>
          <obj_property name="ObjectShortName">reset</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/handshake_mag" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/handshake_mag" type="logic">
          <obj_property name="ElementShortName">handshake_mag</obj_property>
          <obj_property name="ObjectShortName">handshake_mag</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/magnitude" type="array">
-         <obj_property name="ElementShortName">magnitude[15:0]</obj_property>
-         <obj_property name="ObjectShortName">magnitude[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/y" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/y" type="array">
          <obj_property name="ElementShortName">y[9:0]</obj_property>
          <obj_property name="ObjectShortName">y[9:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/y_temp_1" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/y_temp_1" type="array">
          <obj_property name="ElementShortName">y_temp_1[10:0]</obj_property>
          <obj_property name="ObjectShortName">y_temp_1[10:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/y_temp_2" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/y_temp_2" type="array">
          <obj_property name="ElementShortName">y_temp_2[10:0]</obj_property>
          <obj_property name="ObjectShortName">y_temp_2[10:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/y_result" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/y_result" type="array">
          <obj_property name="ElementShortName">y_result[10:0]</obj_property>
          <obj_property name="ObjectShortName">y_result[10:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/mul_1" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/mul_1" type="array">
          <obj_property name="ElementShortName">mul_1[10:0]</obj_property>
          <obj_property name="ObjectShortName">mul_1[10:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/mul_2" type="array">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/mul_2" type="array">
          <obj_property name="ElementShortName">mul_2[10:0]</obj_property>
          <obj_property name="ObjectShortName">mul_2[10:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/shake_save1" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/shake_save1" type="logic">
          <obj_property name="ElementShortName">shake_save1</obj_property>
          <obj_property name="ObjectShortName">shake_save1</obj_property>
       </wvobject>
-      <wvobject fp_name="/Testbench/u_ToPart2Update/u_DigSineGeneratorUpdate/shake_save2" type="logic">
+      <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/shake_save2" type="logic">
          <obj_property name="ElementShortName">shake_save2</obj_property>
          <obj_property name="ObjectShortName">shake_save2</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="group125" type="group">
+      <obj_property name="label">DAC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/TestbenchTopUpdate/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/sw1_mag_up" type="logic">
+         <obj_property name="ElementShortName">sw1_mag_up</obj_property>
+         <obj_property name="ObjectShortName">sw1_mag_up</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/sw2_mag_down" type="logic">
+         <obj_property name="ElementShortName">sw2_mag_down</obj_property>
+         <obj_property name="ObjectShortName">sw2_mag_down</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/sw3_clk_up" type="logic">
+         <obj_property name="ElementShortName">sw3_clk_up</obj_property>
+         <obj_property name="ObjectShortName">sw3_clk_up</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/sw4_clk_down" type="logic">
+         <obj_property name="ElementShortName">sw4_clk_down</obj_property>
+         <obj_property name="ObjectShortName">sw4_clk_down</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/dac_sdi" type="logic">
+         <obj_property name="ElementShortName">dac_sdi</obj_property>
+         <obj_property name="ObjectShortName">dac_sdi</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/dac_cs" type="logic">
+         <obj_property name="ElementShortName">dac_cs</obj_property>
+         <obj_property name="ObjectShortName">dac_cs</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/dac_sck" type="logic">
+         <obj_property name="ElementShortName">dac_sck</obj_property>
+         <obj_property name="ObjectShortName">dac_sck</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestbenchTopUpdate/dac_ld" type="logic">
+         <obj_property name="ElementShortName">dac_ld</obj_property>
+         <obj_property name="ObjectShortName">dac_ld</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/switch_magnitude" type="array">
+      <obj_property name="ElementShortName">switch_magnitude[10:0]</obj_property>
+      <obj_property name="ObjectShortName">switch_magnitude[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestbenchTopUpdate/u_ToPart2Update/u_DigSineGeneratorUpdate/magnitude" type="array">
+      <obj_property name="ElementShortName">magnitude[10:0]</obj_property>
+      <obj_property name="ObjectShortName">magnitude[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Reversed">false</obj_property>
    </wvobject>
 </wave_config>

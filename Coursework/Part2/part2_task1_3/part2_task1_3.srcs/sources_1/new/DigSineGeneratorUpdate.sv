@@ -24,7 +24,7 @@ module DigSineGeneratorUpdate(clk, reset, handshake_mag, magnitude, y);
 
 input clk, reset;
 input handshake_mag;
-input logic [15:0] magnitude;
+input logic [10:0] magnitude;
 output logic [9:0] y;
 
 
@@ -38,7 +38,7 @@ always @(posedge clk or posedge reset) begin
         y_temp_2 <= 11'b0;
     end
     else if(shake_save1 ^ shake_save2) begin
-        y_temp_1 <= magnitude[15:0];
+        y_temp_1 <= magnitude[10:0];
         y_temp_2 <= 11'b0;
     end
     else begin

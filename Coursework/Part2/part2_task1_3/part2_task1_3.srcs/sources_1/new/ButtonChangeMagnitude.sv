@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 30.04.2023 02:00:14
+// Create Date: 02.05.2023 17:15:50
 // Design Name: 
-// Module Name: BottonChangeMagnitude
+// Module Name: ButtonChangeMagnitude
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,29 +20,25 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module BottonChangeMagnitude(clk, reset, valid_mag, sw12_value, switch_magnitude, handshake_mag);
+module ButtonChangeMagnitude(clk, reset, valid_mag, sw12_value, switch_magnitude, handshake_mag);
 
 //parameter NORAML = 69;
 
 input clk, reset;
 input valid_mag;
 input logic [7:0] sw12_value;
-output logic [15:0] switch_magnitude;
+output logic [10:0] switch_magnitude;
 output logic handshake_mag;
-
-logic [15:0] value_temp;
 
 always @(posedge clk or posedge reset) begin
     if (reset) begin
-        value_temp <= 16'd69;
+        switch_magnitude <= 11'd70;
         handshake_mag <= 1'b0;
     end
     else if (valid_mag) begin
-        value_temp <= 16'd69 + (sw12_value - 50) * 10;
+        switch_magnitude <= sw12_value; //0-126
         handshake_mag <= ~ handshake_mag;
     end
 end
-
-assign switch_magnitude = value_temp;
 
 endmodule

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 30.04.2023 14:35:48
+// Create Date: 02.05.2023 17:17:51
 // Design Name: 
-// Module Name: KeyFlagSettingVlaue
+// Module Name: FlagSettingValue
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,7 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module KeyFlagSettingVlaue(
+
+module FlagSettingValue(
   input clk,
   input reset,
   input logic [3:0] flag,
@@ -29,37 +30,32 @@ module KeyFlagSettingVlaue(
   output logic valid_clk
 );
 
-  parameter VALUE_INIT_MAG = 50; 
-  parameter VALUE_MAX_MAG = 100; 
-  parameter VALUE_MAX_CLK = 200;
-  parameter VALUE_INIT_CLK = 100;
+  parameter VALUE_MAX1 = 126;//0-126
+  parameter VALUE_MAX2 = 200;
   
   logic [7:0] value_temp1;
   logic [7:0] value_temp2;
-  
-
 
 always @(posedge clk or posedge reset) begin
     if (reset) begin
-      value_temp1 <= 8'b00110010;
+      value_temp1 <= 8'd70;
       valid_mag <= 1'b0;
     end
     else begin
       //0
       if (flag[0]) begin
-        if (value_temp1 < VALUE_MAX_MAG - 1) begin
-          value_temp1 <= value_temp1 + 1;
+        if (value_temp1 < VALUE_MAX1) begin
+          value_temp1 <= value_temp1 + 2;
           valid_mag <= 1'b1;
         end
       end
       else if (valid_mag) begin
         valid_mag <= 1'b0;
       end 
-      
       //1
       if (flag[1]) begin
-        if (value_temp1 > 1) begin
-          value_temp1 <= value_temp1 - 1;
+        if (value_temp1 >= 2) begin
+          value_temp1 <= value_temp1 - 2;
           valid_mag <= 1'b1;
         end
       end
@@ -71,13 +67,13 @@ end
      
 always @(posedge clk or posedge reset) begin
     if (reset) begin
-      value_temp2 <= 8'b01100100;
+      value_temp2 <= 8'd100;
       valid_clk <= 1'b0;
     end
     else begin
       //2
       if (flag[2]) begin
-        if (value_temp2 < VALUE_MAX_CLK - 1) begin
+        if (value_temp2 < VALUE_MAX2) begin
           value_temp2 <= value_temp2 + 1;
           valid_clk <= 1'b1;
         end
@@ -98,8 +94,7 @@ always @(posedge clk or posedge reset) begin
     end
 end
 
-  assign value_12 = value_temp1;
-  assign value_34 = value_temp2;
+assign value_12 = value_temp1;
+assign value_34 = value_temp2;
 
 endmodule
-
