@@ -25,7 +25,7 @@ module ButtonChangeClk(clk, flag, sw34_value, switch_clk);
 //parameter DIV_FACTOR_10Khz = 10000; // 10KHZ
 input clk;
 input logic [3:0] flag;
-input logic signed [8:0] sw34_value;
+input logic [7:0] sw34_value;
 output logic switch_clk;
 
 logic [15:0] value_temp;
@@ -34,7 +34,7 @@ logic [15:0] count_clk;
 always @(posedge clk) begin
     if(flag[2] != 1'b0 || flag[3] != 1'b0) begin
         value_temp <= 15'd10000;
-        value_temp <= value_temp + sw34_value * 20;
+        value_temp <= value_temp + (sw34_value - 100) * 40;
         count_clk  <= 16'b0;
     end
     else begin

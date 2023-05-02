@@ -39,16 +39,16 @@ TopPart2 u_TopPart2(
 );
 
     initial begin
-        clk = 0;
-        reset = 1;
-        #10;
-        reset = 0;
-        #20000;
-//        $finish;
+        clk <= 1'b1;
+        reset = 1'b1;
+        #20;
+        reset = 1'b0;
+        #20;
+        reset = 1'b1;
+        #20;
+        reset = 1'b0;   
     end
 
     always #5 clk = ~ clk ;
-
-
 
 endmodule

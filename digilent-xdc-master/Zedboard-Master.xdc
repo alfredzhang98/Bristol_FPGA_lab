@@ -94,6 +94,18 @@ set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
 #set_property PACKAGE_PIN AB9  [get_ports {JA9}];  # "JA9"
 
 
+# output dac_sdi;  // SPI serial data out
+# output dac_cs;   // chip select - low when sending data to dac
+# output dac_sck;  // SPI clock, 16 cycles at half sysclk freq
+# output dac_ld;
+set_property PACKAGE_PIN Y11  [get_ports {dac_sdi}];  # "JA1"
+# set_property PACKAGE_PIN AA8  [get_ports {JA10}];  # "JA10"
+set_property PACKAGE_PIN AA11 [get_ports {dac_cs}];  # "JA2"
+set_property PACKAGE_PIN Y10  [get_ports {dac_sck}];  # "JA3"
+set_property PACKAGE_PIN AA9  [get_ports {dac_ld}];  # "JA4"
+#set_property PACKAGE_PIN AB11 [get_ports {JA7}];  # "JA7"
+#set_property PACKAGE_PIN AB10 [get_ports {JA8}];  # "JA8"
+#set_property PACKAGE_PIN AB9  [get_ports {JA9}];  # "JA9"
 # ----------------------------------------------------------------------------
 # JB Pmod - Bank 13
 # ---------------------------------------------------------------------------- 
@@ -172,7 +184,7 @@ set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN T22 [get_ports {led}];  # "LD0"
+#set_property PACKAGE_PIN T22 [get_ports {LD0}];  # "LD0"
 #set_property PACKAGE_PIN T21 [get_ports {LD1}];  # "LD1"
 #set_property PACKAGE_PIN U22 [get_ports {LD2}];  # "LD2"
 #set_property PACKAGE_PIN U21 [get_ports {LD3}];  # "LD3"
@@ -202,7 +214,7 @@ set_property PACKAGE_PIN T22 [get_ports {led}];  # "LD0"
 # ----------------------------------------------------------------------------
 # User Push Buttons - Bank 34
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN P16 [get_ports {BTNC}];  # "BTNC"
+set_property PACKAGE_PIN P16 [get_ports {reset}];  # "BTNC"
 #set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
 #set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
 #set_property PACKAGE_PIN R18 [get_ports {BTNR}];  # "BTNR"
@@ -234,9 +246,9 @@ set_property PACKAGE_PIN T22 [get_ports {led}];  # "LD0"
 ## ----------------------------------------------------------------------------
 ## User DIP Switches - Bank 35
 ## ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN F22 [get_ports {x1}];  # "SW0"
-#set_property PACKAGE_PIN G22 [get_ports {x2}];  # "SW1"
-#set_property PACKAGE_PIN H22 [get_ports {x3}];  # "SW2"
+#set_property PACKAGE_PIN F22 [get_ports {SW0}];  # "SW0"
+#set_property PACKAGE_PIN G22 [get_ports {SW1}];  # "SW1"
+#set_property PACKAGE_PIN H22 [get_ports {SW2}];  # "SW2"
 #set_property PACKAGE_PIN F21 [get_ports {SW3}];  # "SW3"
 #set_property PACKAGE_PIN H19 [get_ports {SW4}];  # "SW4"
 #set_property PACKAGE_PIN H18 [get_ports {SW5}];  # "SW5"

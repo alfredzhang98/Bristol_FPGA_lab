@@ -23,42 +23,41 @@ module KeyFlagSettingVlaue(
   input clk,
   input reset,
   input logic [3:0] flag,
-  output logic value_change,
-  output logic signed [8:0] value_12,
-  output logic signed [8:0] value_34
+  output logic [7:0] value_12,
+  output logic [7:0] value_34
 );
 
-  parameter VALUE_MAX_CLK = 255;
-  parameter VALUE_MIN_CLK = -255;
-  parameter VALUE_MAX_MAG = 50; 
-  parameter VALUE_MIN_MAG = -50;
+  parameter VALUE_MAX_CLK = 200;
+  parameter VALUE_MAX_MAG = 100; 
+  parameter VALUE_INIT_CLK = 100;
+  parameter VALUE_INIT_MAG = 50; 
   
-  logic signed [8:0] value_temp1;
-  logic signed [8:0] value_temp2;
+  logic [7:0] value_temp1;
+  logic [7:0] value_temp2;
 
   always @(posedge clk or posedge reset) begin
     if (reset) begin
-      value_temp1 = 0;
-      value_temp2 = 0;
+      value_temp1 = 8'd100;
+      value_temp2 = 8'd50;
     end
     else begin
       if (flag[0]) begin
-        if (value_temp1 < VALUE_MAX_MAG) begin
+        if (value_temp1 < VALUE_MAX_CLK - 1) begin
           value_temp1 = value_temp1 + 1;
         end
       end
       if (flag[1]) begin
-        if (value_temp1 > VALUE_MIN_MAG) begin
+        if (value_temp1 > 1) begin
           value_temp1 = value_temp1 - 1;
         end
       end
       if (flag[2]) begin
-        if (value_temp2 < VALUE_MAX_CLK) begin
+        if (value_temp2 < VALUE_MAX_MAG - 1) begin
           value_temp2 = value_temp2 + 1;
         end
       end
       if (flag[3]) begin
-        if (value_temp2 > VALUE_MIN_CLK) begin
+        if (value_temp2 > 1) begin
           value_temp2 = value_temp2 - 1;
         end
       end

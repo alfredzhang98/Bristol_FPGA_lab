@@ -3,131 +3,45 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="Testswitch_behav.wdb" id="1">
+      <db_ref path="TestbenchTop_behav.wdb" id="1">
          <top_modules>
-            <top_module name="Testswitch" />
+            <top_module name="TestbenchTop" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="71.455643046 ms"></ZoomEndTime>
-      <Cursor1Time time="18.026020000 ms"></Cursor1Time>
+      <ZoomStartTime time="82,656.745000 us"></ZoomStartTime>
+      <ZoomEndTime time="82,692.745001 us"></ZoomEndTime>
+      <Cursor1Time time="82,686.745000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="404"></NameColumnWidth>
-      <ValueColumnWidth column_width="156"></ValueColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="6" />
-   <wvobject fp_name="group25" type="group">
-      <obj_property name="label">Clk_div</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+   <wvobject fp_name="/TestbenchTop/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="group34" type="group">
-      <obj_property name="label">Sin_gen</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
+   <wvobject fp_name="/TestbenchTop/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="group56" type="group">
-      <obj_property name="label">Spi_dac</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+   <wvobject fp_name="/TestbenchTop/dac_sdi" type="logic">
+      <obj_property name="ElementShortName">dac_sdi</obj_property>
+      <obj_property name="ObjectShortName">dac_sdi</obj_property>
    </wvobject>
-   <wvobject fp_name="group66" type="group">
-      <obj_property name="label">top</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+   <wvobject fp_name="/TestbenchTop/dac_cs" type="logic">
+      <obj_property name="ElementShortName">dac_cs</obj_property>
+      <obj_property name="ObjectShortName">dac_cs</obj_property>
    </wvobject>
-   <wvobject fp_name="group106" type="group">
-      <obj_property name="label">Switch</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/Testswitch/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/reset" type="logic">
-         <obj_property name="ElementShortName">reset</obj_property>
-         <obj_property name="ObjectShortName">reset</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/sw1_mag_up" type="logic">
-         <obj_property name="ElementShortName">sw1_mag_up</obj_property>
-         <obj_property name="ObjectShortName">sw1_mag_up</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/sw2_mag_down" type="logic">
-         <obj_property name="ElementShortName">sw2_mag_down</obj_property>
-         <obj_property name="ObjectShortName">sw2_mag_down</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/sw3_clk_up" type="logic">
-         <obj_property name="ElementShortName">sw3_clk_up</obj_property>
-         <obj_property name="ObjectShortName">sw3_clk_up</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/sw4_clk_down" type="logic">
-         <obj_property name="ElementShortName">sw4_clk_down</obj_property>
-         <obj_property name="ObjectShortName">sw4_clk_down</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/flag" type="array">
-         <obj_property name="ElementShortName">flag[3:0]</obj_property>
-         <obj_property name="ObjectShortName">flag[3:0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/TestbenchTop/dac_sck" type="logic">
+      <obj_property name="ElementShortName">dac_sck</obj_property>
+      <obj_property name="ObjectShortName">dac_sck</obj_property>
    </wvobject>
-   <wvobject fp_name="group121" type="group">
-      <obj_property name="label">switch_in</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/reset" type="logic">
-         <obj_property name="ElementShortName">reset</obj_property>
-         <obj_property name="ObjectShortName">reset</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/sw1_mag_up" type="logic">
-         <obj_property name="ElementShortName">sw1_mag_up</obj_property>
-         <obj_property name="ObjectShortName">sw1_mag_up</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/sw2_mag_down" type="logic">
-         <obj_property name="ElementShortName">sw2_mag_down</obj_property>
-         <obj_property name="ObjectShortName">sw2_mag_down</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/sw3_clk_up" type="logic">
-         <obj_property name="ElementShortName">sw3_clk_up</obj_property>
-         <obj_property name="ObjectShortName">sw3_clk_up</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/sw4_clk_down" type="logic">
-         <obj_property name="ElementShortName">sw4_clk_down</obj_property>
-         <obj_property name="ObjectShortName">sw4_clk_down</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/flag_out" type="array">
-         <obj_property name="ElementShortName">flag_out[3:0]</obj_property>
-         <obj_property name="ObjectShortName">flag_out[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/count_switch1" type="array">
-         <obj_property name="ElementShortName">count_switch1[31:0]</obj_property>
-         <obj_property name="ObjectShortName">count_switch1[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/count_switch2" type="array">
-         <obj_property name="ElementShortName">count_switch2[31:0]</obj_property>
-         <obj_property name="ObjectShortName">count_switch2[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/count_switch3" type="array">
-         <obj_property name="ElementShortName">count_switch3[31:0]</obj_property>
-         <obj_property name="ObjectShortName">count_switch3[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/count_switch4" type="array">
-         <obj_property name="ElementShortName">count_switch4[31:0]</obj_property>
-         <obj_property name="ObjectShortName">count_switch4[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/flag" type="array">
-         <obj_property name="ElementShortName">flag[3:0]</obj_property>
-         <obj_property name="ObjectShortName">flag[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/flog_out" type="logic">
-         <obj_property name="ElementShortName">flog_out</obj_property>
-         <obj_property name="ObjectShortName">flog_out</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Testswitch/u_SwitchInterface/AVOID_SHAKE" type="array">
-         <obj_property name="ElementShortName">AVOID_SHAKE[31:0]</obj_property>
-         <obj_property name="ObjectShortName">AVOID_SHAKE[31:0]</obj_property>
-      </wvobject>
+   <wvobject fp_name="/TestbenchTop/dac_ld" type="logic">
+      <obj_property name="ElementShortName">dac_ld</obj_property>
+      <obj_property name="ObjectShortName">dac_ld</obj_property>
    </wvobject>
 </wave_config>
