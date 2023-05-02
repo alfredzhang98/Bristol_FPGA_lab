@@ -20,25 +20,29 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module BottonChangeMagnitude(clk, flag, sw12_value, switch_magnitude);
+module BottonChangeMagnitude(clk, reset, valid_mag, sw12_value, switch_magnitude, handshake_mag);
 
 //parameter NORAML = 69;
 
-input clk;
-input logic [3:0] flag;
+input clk, reset;
+input valid_mag;
 input logic [7:0] sw12_value;
 output logic [15:0] switch_magnitude;
+output logic handshake_mag;
 
 logic [15:0] value_temp;
 
-always @(posedge clk) begin
-    if(flag[0] != 1'b0 || flag[1] != 1'b0) begin
-        value_temp <= 15'd69;
-        value_temp <= value_temp + (sw12_value - 50);
+always @(posedge clk or posedge reset) begin
+    if (reset) begin
+        value_temp <= 16'd69;
+        handshake_mag <= 1'b0;
     end
-    else begin
-        switch_magnitude <= value_temp;
+    else if (valid_mag) begin
+        value_temp <= 16'd69 + (sw12_value - 50) * 10;
+        handshake_mag <= ~ handshake_mag;
     end
 end
+
+assign switch_magnitude = value_temp;
 
 endmodule

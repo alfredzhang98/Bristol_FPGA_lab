@@ -215,10 +215,10 @@ set_property PACKAGE_PIN AA9  [get_ports {dac_ld}];  # "JA4"
 # User Push Buttons - Bank 34
 # ---------------------------------------------------------------------------- 
 set_property PACKAGE_PIN P16 [get_ports {reset}];  # "BTNC"
-#set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
-#set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
-#set_property PACKAGE_PIN R18 [get_ports {BTNR}];  # "BTNR"
-#set_property PACKAGE_PIN T18 [get_ports {BTNU}];  # "BTNU"
+set_property PACKAGE_PIN R16 [get_ports {sw2_mag_down}];  # "BTND"
+set_property PACKAGE_PIN N15 [get_ports {sw3_clk_up}];  # "BTNL"
+set_property PACKAGE_PIN R18 [get_ports {sw4_clk_down}];  # "BTNR"
+set_property PACKAGE_PIN T18 [get_ports {sw1_mag_up}];  # "BTNU"
 
 # ----------------------------------------------------------------------------
 # USB OTG Reset - Bank 34

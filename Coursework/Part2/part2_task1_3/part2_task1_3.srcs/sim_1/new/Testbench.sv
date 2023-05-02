@@ -25,7 +25,10 @@ module Testbench();
     logic clk;
     logic reset;
     logic sw1_mag_up, sw2_mag_down, sw3_clk_up, sw4_clk_down;
-    logic [9:0] out;
+    logic dac_sdi;
+    logic dac_cs;
+    logic dac_sck;
+    logic dac_ld;
     
     ToPart2Update u_ToPart2Update(
     .clk(clk), 
@@ -34,32 +37,30 @@ module Testbench();
     .sw2_mag_down(sw2_mag_down),
     .sw3_clk_up(sw3_clk_up),
     .sw4_clk_down(sw4_clk_down),
-    .out(out)
+    .dac_sdi(dac_sdi),
+	.dac_cs(dac_cs),
+	.dac_sck(dac_sck),	
+	.dac_ld(dac_ld)
     );
     
-//    DigSineGenerator u_DigSineGenerator(
-//        .clk(clk),
-//        .reset(reset),
-//        .y(out)
-//    );
-    
     initial begin
-        clk = 0;
-        reset = 1;
         sw1_mag_up = 0;
         sw2_mag_down = 0;
         sw3_clk_up = 0;
         sw4_clk_down = 0;
-        #10;
-        reset = 0;
-        #20000;
+        clk <= 1'b1;
+        reset = 1'b1;
+        #20;
+        reset = 1'b0;
+        #20;
+        reset = 1'b1;
+        #20;
+        reset = 1'b0;
+//        #10000;
 //        $finish;
     end
     
-    always #50 sw1_mag_up = ~ sw1_mag_up ;
-    always #100 sw2_mag_down = ~ sw2_mag_down ;
-    always #150 sw3_clk_up = ~ sw3_clk_up ;
-    always #200 sw4_clk_down = ~ sw4_clk_down ;
+//    always #1000 sw3_clk_up = ~ sw3_clk_up ;
     always #5 clk = ~ clk ;
 
 endmodule

@@ -23,7 +23,7 @@
 module ClkDivider
 
 #(
-    parameter DIV_FACTOR_10Khz = 10000 // 10KHZ
+    parameter DIV_FACTOR_10Khz = 5000 // 10KHZ
 )
 (
     input clk,         
