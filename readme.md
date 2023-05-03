@@ -49,6 +49,12 @@ Vivado: ./Coursework/Part2/part2_task1_3/part2_task1_3.srcs
 ![avatar](./results/part2_overview.png)
 
 
+
+![avatar](./results/part2_principle.png)
+
+
+
+
 ![avatar](./results/part2_orgin_444Hz.png)
 
 
