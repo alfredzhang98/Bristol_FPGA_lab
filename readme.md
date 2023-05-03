@@ -49,14 +49,35 @@ Vivado: ./Coursework/Part2/part2_task1_3/part2_task1_3.srcs
 ![avatar](./results/part2_overview.png)
 
 
-
 ![avatar](./results/part2_orgin_444Hz.png)
 
 
 
 **(d) Snapshots of oscilloscope outputs of the DAC demonstrating the output signal parameters (demonstrate your results to a TA or the Lecturer to obtain marks for this section, otherwise you will receive max 10 marks for this part). [25 marks]**
 
-Later
+part2_oscil_initial_mag
+
+![avatar](./results/part2_oscil_initial_mag.png)
+
+part2_oscil_max_mag
+
+![avatar](./results/part2_oscil_max_mag.png)
+
+part2_oscil_min_mag
+
+![avatar](./results/part2_oscil_min_mag.png)
+
+part2_oscil_initial_freq
+
+![avatar](./results/part2_oscil_initial_freq.png)
+
+part2_oscil_max_freq
+
+![avatar](./results/part2_oscil_max_freq.png)
+
+part2_oscil_min_freq
+
+![avatar](./results/part2_oscil_min_freq.png)
 
 **(e) Extra design features introduced and results (can you change the amplitude/frequency while in operation? ).**
 
