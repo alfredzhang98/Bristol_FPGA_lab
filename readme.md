@@ -57,27 +57,27 @@ Vivado: ./Coursework/Part2/part2_task1_3/part2_task1_3.srcs
 
 part2_oscil_initial_mag
 
-![avatar](./results/part2_oscil_initial_mag.png)
+![avatar](./results/part2_oscil_initial_mag.PNG)
 
 part2_oscil_max_mag
 
-![avatar](./results/part2_oscil_max_mag.png)
+![avatar](./results/part2_oscil_max_mag.PNG)
 
 part2_oscil_min_mag
 
-![avatar](./results/part2_oscil_min_mag.png)
+![avatar](./results/part2_oscil_min_mag.PNG)
 
 part2_oscil_initial_freq
 
-![avatar](./results/part2_oscil_initial_freq.png)
+![avatar](./results/part2_oscil_initial_freq.PNG)
 
 part2_oscil_max_freq
 
-![avatar](./results/part2_oscil_max_freq.png)
+![avatar](./results/part2_oscil_max_freq.PNG)
 
 part2_oscil_min_freq
 
-![avatar](./results/part2_oscil_min_freq.png)
+![avatar](./results/part2_oscil_min_freq.PNG)
 
 **(e) Extra design features introduced and results (can you change the amplitude/frequency while in operation? ).**
 
